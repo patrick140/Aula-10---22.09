@@ -3,7 +3,7 @@ import random
 def gerar_dados(qtd, min_val, max_val):
     lista = []
     for _ in range(qtd):
-        lista.append(random.randint(min_val, max_val))
+        lista.append(random.randint(min_val, max_val)) 
     return lista
 
 def soma(a, b):
