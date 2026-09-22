@@ -14,8 +14,8 @@ for i in range(5):
 
 print("Candidatos: \n")
 
-for i in range(len(funcionarios)):
-    if "nome" in funcionarios[i]: 
+for i in range(len(funcionarios)): #len()retorna a quantidade de itens em um objeto
+    if "nome" in funcionarios[i]: #in em um if testa se um item esta em outro neste caso esta testando se a chave "nome" esta no dicionario que esta dentro da lista
         print("nome do candidato: ", funcionarios[i]["nome"])
         print("Data de nascimento do candidato: ", funcionarios[i]["nascimento"])
         print("Telefone do candidato: ", funcionarios[i]["telefone"])

@@ -1,4 +1,3 @@
-Total_peso = float(input("Digite o peso total dos peixes pescados neste dia (somente o peso): "))
 
 def calc_multa(valor):
     limite = 100
@@ -10,9 +9,12 @@ def calc_multa(valor):
     else:
         return 0
 
+Total_peso = float(input("Digite o peso total dos peixes pescados neste dia (somente o peso): "))
+
 multa_peso = calc_multa(Total_peso)
 
+
 if multa_peso != 0:
-    print(f"multa de R${multa_peso:.2f}!") #:.2f faz com que so apareca as duas primeiras casas apos o ponto (virgula)
+    print(f"multa de R${multa_peso:.2f}!", multa_peso) #:.2f faz com que so apareca as duas primeiras casas apos o ponto (virgula)
 else:
-    print("Valor não excedeu limite e nã gerou multa.")
+    print("Valor não excedeu limite e não gerou multa.")
