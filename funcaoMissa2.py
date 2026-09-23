@@ -1,5 +1,6 @@
 def calc_imc(peso, altura):
-    imc = peso / (altura * altura)
+    imc = peso / altura **2
+    print(f"{imc:.2f}")
     if imc > 40:
             print("Você esta com obesidade de grau III\n")
     elif imc <= 40 and imc >= 35:
@@ -23,6 +24,8 @@ while controlador == 1:
     altura = float(input("digite a sua altura(use ponto e não virgula):"))
     print("\n")
     calc_imc(peso, altura)
+    imc = calc_imc(peso, altura)
+    print(f"Seu imc é: {imc}")
     print("Você deseja testar mais alguem? \nDigite 1 para sim e 0 para não")
     controlador = int(input(""))
 
